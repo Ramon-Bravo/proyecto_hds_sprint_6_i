@@ -6,7 +6,7 @@ car_data = pd.read_csv('vehicles_us.csv') # leer los datos
 
 st.header("Analisis de datos Proyecto 6")
 
-hist_button = st.button('Construir histograma') # crear un botón
+hist_button = st.checkbox('Construir histograma') # crear un botón
 
 if hist_button: # al hacer clic en el botón
     # escribir un mensaje
@@ -18,7 +18,7 @@ if hist_button: # al hacer clic en el botón
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_button = st.button('Construir Scatter') # crear un botón
+scatter_button = st.checkbox('Construir Scatter') # crear un botón
 
 if scatter_button: # al hacer clic en el botón
     # escribir un mensaje
